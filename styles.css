@@ -1,0 +1,436 @@
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template: 800px 350px 1300px 600px 200px/ repeat(2, 1fr);
+}
+
+header {
+    grid-area: 1 / 1 / span 1 / -1;
+    background-image: url('./assets/header-background.jpg');  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template:  repeat(8, 1fr) / repeat(12, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+header h1 {
+    grid-area: 6 / 2 / span 2 / span 3;
+    margin-top: 20px;
+    color: white;
+}
+
+button {
+    width: 160px;
+    height: 65px;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+header button {
+    grid-area: 7 / 2 / span 1 / span 1;
+    margin-top: 65px;
+}
+
+nav {
+    grid-area: 1 / 1 / span 1 / -1;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    float: right;
+    width: 40%;
+}
+
+li {
+    display: inline-block;
+    margin: 30px 5% 30px 5%;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+li:hover {
+    border-bottom: 2px solid red;
+}
+
+h1 {
+    font-size: 2.5em;
+    width: 500px;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+
+.logo {
+ width: 200px;
+ height: auto;
+ margin-top: 15px;
+ margin-left: 20px;
+}
+
+.left{
+    grid-area: 2 / 1 / span 1 / span 1;
+    background-color: #e0e0db;
+    display: flex;   
+    justify-content:flex-end;
+    font-size: 1.8em;
+    font-weight: 500;
+    line-height: 1.8em;
+}
+
+.left div {
+    width: 70%;
+    margin-right: 30px;
+    margin-top: 80px;
+}
+
+
+
+.right {
+    grid-area: 2 / 2 / span 1 / span 1;
+    background-color: #e0e0db;
+    display: flex; 
+    justify-content:start;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+
+.right div {
+    width: 70%;
+    margin-left: 30px;
+    margin-top: 80px;
+}
+
+.wines {
+    grid-area: 3 / 1 / span 1 / -1;
+    display: grid;
+    grid-template: repeat(20, 1fr) / repeat(12, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.6em;
+    line-height: 1.1em;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.1em;
+    margin-bottom: 40px;
+}
+
+.wines button {
+    color: white;
+    background-color: rgb(37,53,81);
+}
+
+.wines button:hover {
+    background-color: rgb(37,53,81, 0.8);
+}
+
+.wine_description_one {
+    grid-area: 4 / 1 / span 5 / span 4; 
+    min-width: 500px;
+}
+
+.wine_img_one {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    grid-area: 2 / 8 / span 3 / span 3; 
+}
+
+.wine_description_two {
+    grid-area: 14 / 8 / span 5 / span 4; 
+    min-width: 500px;
+}
+
+
+.wine_img_two {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    grid-area: 12 / 1 / span 3 / span 3; 
+}
+
+.quote {
+    grid-area: 4 / 1 / span 1 / -1;
+    background-image: url('./assets/quote-background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+}
+
+.quote div {
+    max-width: 800px;
+}
+
+blockquote {
+    font-size: 2.1em;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.quote p {
+    font-size: 1.2em;
+}
+
+
+footer {
+    grid-area: 5 / 1 / span 1 / -1;
+    background-color: #2a2829;
+    display: grid;
+    grid-template: 50px 100px 50px / repeat(12, 1fr);
+    color: white;
+}
+
+
+
+.address {
+    grid-area: 2 / 3 / span 1 / span 3;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+footer a {
+    display: block;
+    line-height: 1.5em;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.5em;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.action {
+    grid-area: 2 / 9 / span 1 / span 3;
+}
+
+.follow {
+    grid-area: 2 / 11 / span 1 / span 2;
+}
+
+@media only screen and (max-width: 1220px) {
+    ul {
+        float: right;
+        width: 50%;
+    }
+
+    .wines {
+        width: 100%;
+    }
+
+    .wine_description_one {
+        grid-area: 4 / 1 / span 5 / span 6; 
+        min-width: 300px;
+        padding: 0px 10px;
+        margin: 0 auto;
+    }
+    
+    .wine_img_one {
+        grid-area: 2 / 7 / span 3 / span 6; 
+        margin: 0 auto;
+        width: 400px;
+        height: 400px;
+        
+    }
+    
+    .wine_description_two {
+        grid-area: 14 / 7 / span 5 / span 6; 
+        min-width: 300px;
+        padding: 0px 10px;
+        margin: 0 auto;
+    }   
+    
+    .wine_img_two {
+        grid-area: 12 / 1 / span 3 / span 6; 
+        margin: 0 auto;
+        width: 400px;
+        height: 400px;
+    }
+
+    blockquote {
+        font-size: 1.8em;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .grid {
+        grid-template: 800px 175px 175px 1600px 600px 200px/ repeat(2, 1fr);
+    }
+
+    .wines {
+        grid-area: 4 / 1 / span 1 / -1;
+    }
+
+    .quote {
+        grid-area: 5 / 1 / span 1 / -1;
+    }
+
+    footer {
+        grid-area: 6 / 1 / span 1 / -1;
+    }
+
+    ul {
+        display:none;
+    }
+
+    header h1 {
+        grid-area: 6 / 2 / span 2 / -1;
+        font-size: 2.1em;
+        margin-top: 20px;
+        color: white;
+        width: 100%;
+    }
+
+    .left{
+        grid-area: 2 / 1 / span 1 / -1;
+    }
+    
+    .left div {
+        width: 100%;
+        margin: 30px;
+        margin-top: 50px;
+        font-size: 0.8em;
+    }
+    
+    
+    
+    .right {
+        grid-area: 3 / 1 / span 1 / -1;
+    }
+    
+    .right div {
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 0.8em;
+    }
+
+    .wines {
+        width: 100%;
+        grid-row-gap: 60px;
+    }
+
+    .wine_description_one {
+        grid-area: 7 / 2 / span 5 / -1; 
+        width: 400px;
+        padding: 0px 10px;
+        margin: 0 auto;
+    }
+    
+    .wine_img_one {
+        grid-area: 2 / 2 / span 3 / -1; 
+        margin: 0 auto;
+        width: 400px;
+    }
+    
+    .wine_description_two {
+        grid-area: 16 / 2 / span 5 / -1; 
+        max-width: 400px;
+        padding: 0px 10px;
+    }   
+    
+    .wine_img_two {
+        grid-area: 11 / 2 / span 3 / -1;  
+        height: 400px;
+    }
+
+    blockquote {
+        font-size: 1.6em;
+    }
+
+    .address {
+        grid-area: 2 / 2 / span 1 / span 4;  
+    }
+
+    .action {
+        grid-area: 2 / 7 / span 1 / span 3;
+    }
+  }
+
+
+  @media only screen and (max-width: 500px) {
+
+
+    .wine_description_one {
+        grid-area: 7 / 1 / span 5 / -1; 
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .wine_img_one {
+        grid-area: 2 / 1 / span 3 / -1; 
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    .wine_description_two {
+        grid-area: 16 / 1 / span 5 / -1; 
+        width: 90%;
+    }   
+    
+    .wine_img_two {
+        grid-area: 11 / 1 / span 3 / -1;  
+        width: 90%;
+    }
+
+    blockquote {
+        padding: 0px 15px;
+        font-size: 1.6em;
+    }
+
+    .address {
+        grid-area: 2 / 1 / span 1 / span 5;
+        padding: 0px 20px;  
+    }
+
+    .action {
+        grid-area: 2 / 6 / span 1 / span 3;
+    }
+
+    .follow {
+        grid-area: 2 / 10 / span 1 / span 3;
+    }
+
+  }
